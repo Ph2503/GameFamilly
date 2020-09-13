@@ -6,96 +6,24 @@ body {
     margin: 0;
     outline: none;
 }
-#check{
-    display: none;
-}
-#menu {
-    width:20px;
-    transition: all .5s;
-    
-    border-top-right-radius: 4px ;
-    border-bottom-right-radius: 4px;
-}
-#icone {
-    
-    position: absolute;
-    margin: 15px;
-    z-index: 1;
-    transition: all .4s;
-
-}
-
-.barra{
-    background-color: rgba(120, 143, 243, 0.37);
-    height: 100%;
-    border-top-right-radius: 20px ;
-    border-bottom-right-radius: 20px;
-    width: 190px;
-    position: absolute;
-    transition: all .5s ;
-    left: -190px;
-}
-
-nav {
-    width: 100%;
-    background-color: rgba(255, 0, 0, 0);
-    position:absolute;
-    top: 60px;
-
-}
-nav a {
-    text-decoration: none;
-    color: black;
-}
-.link {
-    background-color: rgba(255, 255, 255, 0);
-    border-top-right-radius: 20px ;
-    border-bottom-right-radius: 20px;
-    padding: 30px;
-    transition: all .2s;
-    font-family: 'Poppins', 'sans-serif';
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    
-}
-.link:hover {
-    background-color: rgba(255, 255, 255, 0.219);
-}
-.link:active {
-    text-decoration: none;
-    outline: none;
-    transition: all .2s;
-    color: white;
-    background-color: black;
-}
-#check:checked ~ .barra {
-    left: 0px;
-    border-top-right-radius: 20px ;
-    border-bottom-right-radius: 20px;
-}
-#check:checked ~ #icone {
-    transition: all .4s;
-    border-radius: 100%;
-    transform: rotate(90deg);
-}
-#check:checked ~ #menu {
-    transition: all .5s;
-    border-top-right-radius: none;
-    border-bottom-right-radius: none;
-}
 #name {
     font-family: 'Poppins', 'sans-serif';
-    color: black;
     font-size: 19px;
-    margin-top: auto;
+    margin-top:auto;
     margin-left: 40px;
-    
-
+    color: green;
+    transition: all .5s;
+}
+#dname {
+    margin-left: 20px;
+    position: fixed;
+  
+    margin-top: 15px;
+    transition: all .5s;
 
 }
+#check:checked ~ #dname {
+    transition: all .5s;
 
-@media (max-height: 400px){
-    .link {
-        padding: 19px;
-    }
+
 }
